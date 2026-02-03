@@ -40,16 +40,13 @@ CS:GO/CS2 Settings Porter is a powerful GUI application that allows you to easil
 ## 📸 Application Screenshots
 
 ### Dashboard
-![Dashboard](<img width="1916" height="1026" alt="image" src="https://github.com/user-attachments/assets/b0e77d0d-e8f7-4d87-9df2-5c8404ac8a87" />
-)
+<img width="1916" height="1026" alt="image" src="https://github.com/user-attachments/assets/b0e77d0d-e8f7-4d87-9df2-5c8404ac8a87" />
 
 ### Port Settings Tab
-![Port Settings](<img width="1919" height="1027" alt="image" src="https://github.com/user-attachments/assets/7108f1ea-884a-473d-8ab6-ea8ca019c8ff" />
-)
+<img width="1919" height="1027" alt="image" src="https://github.com/user-attachments/assets/7108f1ea-884a-473d-8ab6-ea8ca019c8ff" />
 
 ### Backup/Restore Tabs
-![Backup](<img width="1919" height="1025" alt="image" src="https://github.com/user-attachments/assets/52a3c926-117c-4e3c-b0d7-f266abdc49db" />
-)
+<img width="1919" height="1025" alt="image" src="https://github.com/user-attachments/assets/52a3c926-117c-4e3c-b0d7-f266abdc49db" />
 
 ## 🚀 Installation
 

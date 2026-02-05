@@ -1,266 +1,260 @@
-# CS:GO/CS2 Settings Porter
+# CS:GO / CS2 Settings Porter
 
 <div align="center">
 
-![CS:GO Settings Porter](https://img.shields.io/badge/CS:GO-Settings%20Porter-blue?style=for-the-badge)
-![Platform](https://img.shields.io/badge/Platform-Windows-informational?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3.8%2B-yellow?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+<img src="https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Platform">
+<img src="https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/License-MIT-066da5?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="License">
 
-**Transfer CS:GO/CS2 settings between Steam accounts with ease**
+## Enterprise-Grade Configuration Management for Counter-Strike
 
-[Features](#features) • [Installation](#installation) • [Usage](#usage) • [Building](#building) • [Contributing](#contributing)
+**Streamline the migration and backup of game settings across Steam accounts with a robust, user-friendly desktop application.**
+
+[Overview](#overview) • [Features](#features) • [Installation](#installation) • [Usage](#usage) • [Technical Documentation](#technical-documentation) • [Contributing](#contributing)
 
 </div>
 
-## 📋 Overview
+## Overview
 
-CS:GO/CS2 Settings Porter is a powerful GUI application that allows you to easily transfer, backup, and restore your Counter-Strike: Global Offensive and Counter-Strike 2 settings between different Steam accounts. Perfect for players who have multiple accounts or need to migrate their settings to a new system.
+The CS:GO/CS2 Settings Porter is a professional desktop utility designed to facilitate the efficient transfer, backup, and restoration of Counter-Strike: Global Offensive and Counter-Strike 2 configuration settings. This tool addresses the common challenge of maintaining consistent gameplay environments across multiple Steam accounts or after system migrations, providing a reliable and automated solution.
 
-## ✨ Features
+## Features
 
-### 🚀 Core Functionality
-- **Port Settings**: Copy CS:GO/CS2 configurations from one Steam account to another
-- **Backup Creation**: Create timestamped backups of your settings
-- **Restore Functionality**: Restore settings from previous backups
-- **Account Detection**: Automatically detects Steam accounts with CS:GO/CS2 configs
+### Core Functionality
+*   **Cross-Account Settings Transfer**: Seamlessly copy configuration profiles from one Steam account to another.
+*   **Comprehensive Backup Creation**: Generate timestamped, versioned backups of all game settings.
+*   **One-Click Restoration**: Easily revert to any previously saved backup point.
+*   **Automatic Account Discovery**: Intelligently scans and identifies all Steam accounts with existing CS:GO/CS2 configurations.
 
-### 🎨 User Interface
-- **Modern GUI**: Clean, intuitive interface with tabbed navigation
-- **Real-time Logging**: Detailed operation logs for every action
-- **Progress Indicators**: Visual feedback during operations
-- **Account Browser**: Easy account selection with integrated browser
+### User Interface & Experience
+*   **Structured Tabbed Interface**: Logical organization of functions within a single, clean window.
+*   **Integrated Operation Log**: Real-time, detailed logging of all application activities for auditability.
+*   **Visual Progress Feedback**: Clear indicators for ongoing operations.
+*   **Streamlined Account Management**: Built-in browser for effortless source and target account selection.
 
-### 🔧 Advanced Features
-- **Auto-backup**: Option to create backup before porting
-- **Custom Paths**: Configurable Steam and backup directories
-- **Error Handling**: Comprehensive error messages and validation
-- **Multi-threading**: Non-blocking operations for smooth UX
+### Advanced Capabilities
+*   **Pre-Operation Safeguards**: Configurable option to auto-create backups before any transfer operation.
+*   **Custom Directory Support**: Flexible configuration for Steam installation and backup storage paths.
+*   **Robust Error Handling**: Comprehensive validation and user-friendly error messaging.
+*   **Asynchronous Processing**: Non-blocking operations ensure application responsiveness.
 
-## 📸 Application Screenshots
+## Application Interface
 
 ### Dashboard
-<img width="1916" height="1026" alt="image" src="https://github.com/user-attachments/assets/b0e77d0d-e8f7-4d87-9df2-5c8404ac8a87" />
+*Figure 1: Primary application dashboard displaying detected Steam accounts and quick-access functions.*
+<img width="1916" height="1026" alt="Application Dashboard" src="https://github.com/user-attachments/assets/b0e77d0d-e8f7-4d87-9df2-5c8404ac8a87" />
 
-### Port Settings Tab
-<img width="1919" height="1027" alt="image" src="https://github.com/user-attachments/assets/7108f1ea-884a-473d-8ab6-ea8ca019c8ff" />
+### Settings Transfer Module
+*Figure 2: Interface for selecting source and target accounts and initiating the transfer process.*
+<img width="1919" height="1027" alt="Settings Transfer Interface" src="https://github.com/user-attachments/assets/7108f1ea-884a-473d-8ab6-ea8ca019c8ff" />
 
-### Backup/Restore Tabs
-<img width="1919" height="1025" alt="image" src="https://github.com/user-attachments/assets/52a3c926-117c-4e3c-b0d7-f266abdc49db" />
+### Backup & Restore Modules
+*Figure 3: Dedicated tabs for creating new backups and restoring from existing archives.*
+<img width="1919" height="1025" alt="Backup and Restore Interfaces" src="https://github.com/user-attachments/assets/52a3c926-117c-4e3c-b0d7-f266abdc49db" />
 
-## 🚀 Installation
+## Installation
 
-### Option 1: Download Pre-built Executable (Recommended)
+### Method A: Pre-Compiled Executable (Recommended for End Users)
+1.  Download the latest release package from the official [Releases page](https://github.com/Luzisrepo/Cs-Config-Porter/releases).
+2.  Extract the contents of the ZIP archive to a directory of your choice.
+3.  Execute the `CSGOSettingsPorter.exe` file.
+    *   *Note: No additional software or dependencies are required.*
 
-1. **Download the latest release** from the [Releases page](https://github.com/Luzisrepo/Cs-Config-Porter/releases)
-2. **Extract the ZIP file** to your preferred location
-3. **Run `CSGOSettingsPorter.exe`**
-   - No Python installation required
-   - No dependencies needed
-   - Works out of the box
-
-### Option 2: Run from Source Code
+### Method B: Source Code Execution (For Developers or Contributors)
 
 #### Prerequisites
-- **Python 3.8 or higher** ([Download Python](https://python.org))
-- **Steam installed** on your Windows system
+*   Python 3.8 or newer installed on your system. ([Download Python](https://www.python.org/downloads/))
+*   A standard Windows installation of the Steam client.
 
-#### Installation Steps
+#### Procedure
 ```bash
-# Clone the repository
+# Clone the repository to your local machine
 git clone https://github.com/Luzisrepo/Cs-Config-Porter.git
 cd Cs-Config-Porter
 
-# Install dependencies
+# Install required Python modules
 pip install -r requirements.txt
 
-# Run the application
+# Launch the application
 python csporter.py
 ```
 
-#### Required Python Packages
-The application requires:
-- `tkinter` (usually included with Python on Windows)
-- Standard library modules only (no external dependencies)
+#### Dependency Information
+The application utilizes the following:
+*   `tkinter` (included with standard Python distributions on Windows)
+*   Python Standard Library modules only.
 
-## 📖 Usage Guide
+## Usage Guide
 
-### First Launch
-1. **Launch the application** from the executable or Python script
-2. **Verify Steam Path**: The app auto-detects your Steam installation
-   - If incorrect, update in Settings tab
-3. **View Detected Accounts**: All Steam accounts with CS:GO/CS2 configs appear in the Dashboard
+### Initial Configuration
+1.  Launch `CSGOSettingsPorter.exe`.
+2.  The application will attempt to auto-locate your Steam installation directory. Verify this path on the **Settings** tab.
+3.  Upon successful detection, all Steam accounts containing CS:GO/CS2 configuration data will be listed in the **Dashboard**.
 
-### Porting Settings Between Accounts
-1. Navigate to **"Port Settings"** tab
-2. **Select Source Account**: Enter Steam ID or browse detected accounts
-3. **Select Target Account**: Enter or browse target Steam ID
-4. **Configure Options**:
-   - ✅ "Create backup of target account before porting" (recommended)
-5. Click **"🚀 Port Settings"**
-6. Monitor progress in the operation log
+### Transferring Settings Between Accounts
+1.  Navigate to the **Port Settings** tab.
+2.  In the **Source Account** field, input the Steam ID or select an account from the detected list.
+3.  In the **Target Account** field, input or select the destination Steam ID.
+4.  Configure operational preferences:
+    *   Enable **"Create backup of target account before porting"** (Recommended).
+5.  Initiate the process by selecting **Port Settings**.
+6.  Monitor the progress and outcome in the operation log panel.
 
-### Creating Backups
-1. Go to **"Backup"** tab
-2. **Select Account**: Choose which account to backup
-3. **Choose Location**: Default or custom backup directory
-4. Click **"💾 Create Backup"**
-5. Backup is saved with timestamp: `{account_id}_{YYYY-MM-DD_HH-MM-SS}`
+### Creating a Configuration Backup
+1.  Access the **Backup** tab.
+2.  Select the desired Steam account from the dropdown menu.
+3.  Specify a backup storage location (default directory is pre-configured).
+4.  Select **Create Backup**.
+5.  A new backup folder will be created with the naming convention: `{account_id}_{YYYY-MM-DD_HH-MM-SS}`.
 
-### Restoring Backups
-1. Navigate to **"Restore"** tab
-2. **Select Backup**: Choose from available backups (click Refresh if needed)
-3. **Choose Target Account**: Select which account to restore to
-4. Click **"↩ Restore Backup"**
-5. Monitor restoration progress
+### Restoring from a Backup
+1.  Navigate to the **Restore** tab.
+2.  From the list of available backups (refresh if necessary), select the desired archive.
+3.  Choose the target Steam account for restoration.
+4.  Select **Restore Backup**.
+5.  Observe the restoration progress in the log.
 
-### Settings Configuration
-1. **Steam Path**: Update if Steam is installed in non-default location
-2. **Backup Directory**: Change where backups are stored
-3. **Save Settings**: Changes take effect immediately
+### Application Settings
+*   **Steam Installation Path**: Update if Steam is installed in a non-standard location.
+*   **Backup Directory**: Define the default storage path for created backups.
+*   Settings are saved and applied immediately upon modification.
 
-## 🛠️ Building from Source
+## Building from Source
 
-### Using the Provided Compiler Script
-The repository includes a convenient build script for Windows:
-
+### Automated Build Process (Windows)
+A batch script is provided to simplify the compilation process:
 ```bash
-# Simply run the compiler script
+# Execute the build script from the repository root
 build.bat
 ```
+This script performs the following actions sequentially:
+1.  Validates the Python installation.
+2.  Installs PyInstaller if not present.
+3.  Cleans previous build artifacts.
+4.  Compiles the standalone executable.
+5.  Outputs the final executable to the `dist/` directory.
 
-The script will:
-1. **Check Python installation**
-2. **Install PyInstaller** if needed
-3. **Clean previous builds**
-4. **Create standalone executable**
-5. **Output to `dist/CSGOSettingsPorter.exe`**
-
-### Manual Building with PyInstaller
+### Manual Compilation with PyInstaller
 ```bash
-# Install PyInstaller
+# Install the PyInstaller package
 pip install pyinstaller
 
-# Build the executable
+# Execute PyInstaller with recommended parameters
 pyinstaller --onefile --windowed --name="CSGOSettingsPorter" --clean --noconfirm csporter.py
 ```
 
-### Build Options
-- `--onefile`: Creates single executable
-- `--windowed`: No console window
-- `--clean`: Clean build directory
-- `--icon=icon.ico`: Add custom icon (optional)
+### Common Build Parameters
+*   `--onefile`: Packages the application into a single executable file.
+*   `--windowed`: Prevents a console window from appearing.
+*   `--clean`: Removes temporary files from previous builds.
+*   `--icon=icon.ico`: Specifies a custom application icon (optional).
 
-## 📁 File Structure
+## Project Structure
 
 ```
 Cs-Config-Porter/
-├── csporter.py              # Main application source code
-├── build.bat                # Windows build script
-├── requirements.txt         # Python dependencies
-├── README.md               # This documentation
-├── dist/                   # Compiled executables (after build)
+├── csporter.py              # Primary application source code
+├── build.bat                # Automated build script for Windows
+├── requirements.txt         # Python package dependencies
+├── README.md               # Project documentation
+├── dist/                   # Output directory for compiled executables
 │   └── CSGOSettingsPorter.exe
-├── build/                  # Build temporary files
-└── backups/                # User backup storage (created at runtime)
+├── build/                  # Temporary files generated during compilation
+└── backups/                # User-generated backup storage (created at runtime)
 ```
 
-## 🔍 Technical Details
+## Technical Documentation
 
-### How It Works
-1. **Steam UserData Structure**: The app navigates to `Steam/userdata/{STEAM_ID}/730/local/cfg`
-2. **Configuration Files**: CS:GO/CS2 settings are stored as `.cfg` files
-3. **Porting Process**: Copies all files from source to target directory
-4. **Backup Process**: Creates timestamped copies of configuration folders
+### Operational Methodology
+1.  **Path Resolution**: The application interfaces with the Steam `userdata` directory structure, specifically `Steam/userdata/{STEAM_ID}/730/local/cfg`.
+2.  **File Management**: It identifies and processes all relevant `.cfg` configuration files.
+3.  **Transfer Protocol**: Executes a complete copy of all configuration files from the source to the target directory.
+4.  **Backup Protocol**: Creates compressed, timestamped archives of the target configuration folder.
 
-### Default Paths
-```python
-# Steam installation (default)
+### Standard Directory Paths
+```
+# Default Steam Installation Path
 C:\Program Files (x86)\Steam\userdata
 
-# CS:GO/CS2 configuration path
+# CS:GO/CS2 Configuration Storage Path (per account)
 {STEAM_ID}\730\local\cfg
 
-# Backup directory
+# Default Backup Storage Directory
 C:\Program Files (x86)\Steam\cs_backups
 ```
 
-### Supported Files
-- All `.cfg` configuration files
-- `autoexec.cfg`
-- `config.cfg`
-- `video.txt`
-- Other user-created config files
+### Supported File Types
+*   Primary configuration files (`config.cfg`, `autoexec.cfg`)
+*   Video settings (`video.txt`)
+*   All user-generated and game-generated `.cfg` files within the target directory.
 
-## ⚠️ Important Notes
+## Important Notes & Compliance
 
-### Security Considerations
-- **No Internet Access**: Application runs entirely locally
-- **No Data Collection**: No telemetry or data transmission
-- **Backup Safety**: Always creates backups before overwriting
+### Security & Privacy
+*   **Local Execution Only**: The application performs all operations locally and does not require network access.
+*   **No Telemetry**: No user data, configurations, or usage statistics are collected or transmitted.
+*   **Data Integrity**: Built-in safeguards ensure original data is preserved via backups before modification.
 
-### Limitations
-- **Windows Only**: Designed for Windows Steam installations
-- **CS:GO/CS2 Only**: Specifically for Counter-Strike series
-- **Steam Required**: Must have Steam installed
+### System Requirements & Limitations
+*   **Supported OS**: Microsoft Windows (10 or newer recommended).
+*   **Game Support**: Counter-Strike: Global Offensive and Counter-Strike 2 exclusively.
+*   **Prerequisite Software**: A functioning installation of the Steam client is required.
 
 ### Troubleshooting
 
-| Issue | Solution |
-|-------|----------|
-| "Steam path not found" | Update Steam path in Settings tab |
-| "No accounts detected" | Ensure CS:GO/CS2 has been run on the account |
-| "Permission denied" | Run as Administrator or check folder permissions |
-| Executable won't run | Install [Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) |
+| Issue | Recommended Resolution |
+| :--- | :--- |
+| Steam installation path not found. | Manually specify the correct path in the **Settings** tab. |
+| No Steam accounts are detected. | Ensure CS:GO/CS2 has been launched at least once under the target account. |
+| "Permission denied" errors. | Ensure the application has appropriate read/write permissions for the involved directories. |
+| Compiled executable fails to launch. | Install the latest [Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe). |
 
-## 🤝 Contributing
+## Contributing
 
-Contributions are welcome! Here's how you can help:
+We welcome contributions from the community. Please follow the standard process below.
 
 ### Reporting Issues
-1. Check existing [Issues](https://github.com/Luzisrepo/Cs-Config-Porter/issues)
-2. Create new issue with:
-   - Detailed description
-   - Steps to reproduce
-   - Screenshots if applicable
-   - System information
+1.  Review the existing [Issues](https://github.com/Luzisrepo/Cs-Config-Porter/issues) to avoid duplicates.
+2.  Submit a new issue with the following information:
+    *   A clear, descriptive title.
+    *   Detailed steps to reproduce the problem.
+    *   Relevant screenshots or error messages.
+    *   Your system environment details.
 
-### Feature Requests
-1. Check existing feature requests
-2. Submit new request with:
-   - Use case description
-   - Expected behavior
-   - Potential implementation ideas
+### Submitting Enhancements
+1.  Examine current feature requests.
+2.  Propose new enhancements with a clear description of the use case, expected behavior, and proposed solution.
 
-### Pull Requests
-1. **Fork the repository**
-2. **Create feature branch**: `git checkout -b feature/amazing-feature`
-3. **Commit changes**: `git commit -m 'Add amazing feature'`
-4. **Push to branch**: `git push origin feature/amazing-feature`
-5. **Open Pull Request**
+### Development Workflow
+1.  **Fork** the main repository.
+2.  **Create a feature branch**: `git checkout -b feature/descriptive-name`
+3.  **Commit your changes**: `git commit -m 'Add descriptive commit message'`
+4.  **Push to the branch**: `git push origin feature/descriptive-name`
+5.  **Open a Pull Request** for review.
 
-### Development Setup
+### Local Development Environment
 ```bash
-# 1. Fork and clone
+# 1. Clone your forked repository
 git clone https://github.com/YOUR_USERNAME/Cs-Config-Porter.git
+cd Cs-Config-Porter
 
-# 2. Create virtual environment
+# 2. Create and activate a Python virtual environment
 python -m venv venv
-venv\Scripts\activate  # Windows
+venv\Scripts\activate
 
-# 3. Install development dependencies
+# 3. Install development tools
 pip install pyinstaller
 
-# 4. Make changes and test
+# 4. Run the application for testing
 python csporter.py
 
-# 5. Build and test executable
+# 5. Build a test executable
 build.bat
 ```
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Distributed under the MIT License. Refer to the [LICENSE](LICENSE) file for the full text.
 
 ```
 MIT License
@@ -278,29 +272,27 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 ```
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
-- **Valve Corporation** for CS:GO and CS2
-- **Steam** platform for userdata structure
-- **Python community** for excellent libraries
-- **Contributors** and users of this tool
+*   Valve Corporation for Counter-Strike: Global Offensive and Counter-Strike 2.
+*   The Steam platform and its consistent userdata structure.
+*   The Python Software Foundation and the open-source community.
+*   All contributors and users who provide feedback and support.
 
-## 📞 Contact & Support
+## Contact & Support
 
-- **GitHub Issues**: [Report bugs or request features](https://github.com/Luzisrepo/Cs-Config-Porter/issues)
-- **Repository**: [https://github.com/Luzisrepo/Cs-Config-Porter](https://github.com/Luzisrepo/Cs-Config-Porter)
-- **Developer**: [Luzisrepo](https://github.com/Luzisrepo)
+*   **Official Repository**: [https://github.com/Luzisrepo/Cs-Config-Porter](https://github.com/Luzisrepo/Cs-Config-Porter)
+*   **Issue Tracker**: [GitHub Issues](https://github.com/Luzisrepo/Cs-Config-Porter/issues)
+*   **Maintainer**: [Luzisrepo](https://github.com/Luzisrepo)
 
-## 🌟 Star History
-
-If you find this project useful, please consider giving it a star on GitHub!
+## Project Metrics
 
 [![Star History Chart](https://api.star-history.com/svg?repos=Luzisrepo/Cs-Config-Porter&type=Date)](https://star-history.com/#Luzisrepo/Cs-Config-Porter&Date)
 
 ---
 
 <div align="center">
-for the CS:GO/CS2 community
+A professional tool for the Counter-Strike community.
 
-**Happy Gaming! 🎮**
+**CS:GO/CS2 Settings Porter**
 </div>
